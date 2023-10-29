@@ -1,0 +1,118 @@
+.room_head {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 240px;
+  width: 100%;
+}
+
+.tabs {
+  position: relative;
+  z-index: 2;
+  width: max-content;
+  background-color: var(--white);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.grid_layout {
+  grid-template-columns: auto 1fr;
+}
+
+.change_cover_button {
+  position: absolute !important;
+  right: 180px !important;
+  top: 20px !important;
+}
+
+@media (1200px >=width >=992px) {
+  .room_head {
+    height: 220px;
+  }
+
+  .tabs,
+  .tabs button span,
+  .tabs button {
+    min-height: 42px !important;
+  }
+
+  .tabs button {
+    padding: 10px;
+  }
+
+  .change_cover_button {
+    right: 20px !important;
+  }
+}
+
+@media (992px > width >=768px) {
+  .room_head {
+    height: 200px;
+  }
+
+  .tabs,
+  .tabs button span,
+  .tabs button {
+    min-height: 40px !important;
+  }
+
+  .tabs button {
+    padding: 8px;
+  }
+
+  .change_cover_button {
+    right: 20px !important;
+    top: 15px !important;
+  }
+}
+
+@media (768px > width >=640px) {
+  .room_head {
+    height: 180px;
+  }
+
+  .grid_layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs,
+  .tabs button span,
+  .tabs button {
+    min-height: 35px !important;
+  }
+
+  .tabs button {
+    padding: 5px;
+  }
+
+  .change_cover_button {
+    right: 20px !important;
+    top: 10px !important;
+  }
+}
+
+@media (640px > width >=0px) {
+  .room_head {
+    height: 160px;
+  }
+
+  .grid_layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs,
+  .tabs button span,
+  .tabs button {
+    min-height: 30px !important;
+  }
+
+  .tabs button {
+    padding: 5px;
+  }
+
+  .change_cover_button {
+    right: 10px !important;
+    top: 5px !important;
+  }
+}

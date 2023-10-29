@@ -1,0 +1,28 @@
+.loading_icon {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  font-size: 35px !important;
+  position: relative;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width:992px) {
+  .loading_icon {
+    font-size: 30px !important;
+  }
+}
+
+
+@media (max-width:768px) {
+  .loading_icon {
+    font-size: 22px !important;
+  }
+}

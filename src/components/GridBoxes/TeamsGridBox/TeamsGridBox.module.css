@@ -1,0 +1,19 @@
+.rooms_box {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.not_teams {
+  color: rgb(3, 126, 243, 0.5);
+}
+
+@media (max-width: 768px) {
+  .rooms_box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .rooms_box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

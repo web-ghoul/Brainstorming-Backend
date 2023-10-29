@@ -1,0 +1,139 @@
+.modal_box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 60vw;
+}
+
+.avatar_box {
+  height: max-content;
+  width: max-content;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  background-color: var(--white);
+}
+
+.avatar_box img {
+  width: 100%;
+  height: auto;
+}
+
+.chosen_data_viewer_box {
+  max-height: 90vh;
+  height: max-content;
+  width: 90vw;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.data_viewer {
+  max-height: 60vh;
+  height: min-content;
+  overflow-y: auto;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--white);
+}
+
+.data_viewer video {
+  width: 100%;
+  height: auto;
+}
+
+.file {
+  background-color: var(--white);
+  padding: 5px;
+}
+
+.file img {
+  width: 20px;
+  height: 20px;
+}
+
+.modal_carousel {
+  height: 90vh;
+  width: 90vw;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  grid-template-rows: auto 1fr;
+}
+
+.modal_carousel>button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+@media (1200px >=width >=992px) {
+  .modal_box {
+    padding: 15px;
+    border-radius: 4px;
+    max-width: 75vw;
+    width: 100%;
+  }
+
+  .chosen_data_viewer_box {
+    padding: 18px;
+    border-radius: 8px;
+  }
+
+  .data_viewer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (992px >=width >=0px) {
+  .modal_box {
+    padding: 10px;
+    border-radius: 3px;
+    max-width: 85vw;
+    width: 100%;
+  }
+
+  .chosen_data_viewer_box {
+    padding: 15px;
+    border-radius: 6px;
+  }
+
+  .data_viewer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .chosen_data_viewer_box {
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .data_viewer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .modal_carousel {
+    height: 90vh;
+    width: 90vw;
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  .modal_carousel>button {
+    width: 30px;
+    height: 30px;
+  }
+}

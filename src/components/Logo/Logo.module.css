@@ -1,0 +1,47 @@
+.logo {
+  border-radius: 6px !important;
+}
+
+.logo_icon {
+  font-size: 40px;
+}
+
+@media (1200px >=width >=992px) {
+  .logo {
+    border-radius: 5px;
+  }
+
+  .logo_icon {
+    font-size: 35px;
+  }
+}
+
+@media (992px > width >=768px) {
+  .logo {
+    border-radius: 4px;
+  }
+
+  .logo_icon {
+    font-size: 30px;
+  }
+}
+
+@media (768px > width >=640px) {
+  .logo {
+    border-radius: 3px;
+  }
+
+  .logo_icon {
+    font-size: 28px;
+  }
+}
+
+@media (640px > width >=0px) {
+  .logo {
+    border-radius: 2px;
+  }
+
+  .logo_icon {
+    font-size: 25px;
+  }
+}
